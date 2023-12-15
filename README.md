@@ -13,7 +13,25 @@ Talking about the dataset, the dataset has potential for many analyses and predi
 ### Data Acquistion (Extraction): 
 - Extracting the data from the source and storing at a temporary cloud storage. 
 - I used AWS S3 bucket service to store the dataset and organized the bucket in folders like landing, raw, trusted, and models. 
-- Used -Curl
+- Used -Curl in AWS CLI to perform that
+
+'''
+#downloaded file
+kaggle datasets download -d jeffsinsel/nyc-fhvhv-data -f
+fhvhv_tripdata_2019-02.parquet
+#unzip 
+unzip fhvhv_tripdata_2019-02.parquet
+#copying to s3
+aws s3 cp fhvhv_tripdata_2019-02.parquet s3://pp-nyc-trips-
+data/landing/fhvhv_tripdata_2019-02.parquet
+#checking if its visible in s3
+aws s3 ls s3://pp-nyc-trips-data/landing/
+#yes 
+#removed the files from the local system
+rm fhvhv_tripdata_2019-02.parquet.zip
+rm fhvhv_tripdata_2019-02.parquet
+
+'''
 
 ### Exploratory Data Analysis: 
 - Read the dataset from landing and learn about the data so then transformation can be performed easily.
