@@ -4,6 +4,9 @@
 ## Description
 This project is a creation of machine learning pipeline that incorporates big data technologies using a cloud infrastructure. The project consolidates Extraction, EDA, Transformation, Feature Engineering and Modeling, and Data Visualization to create a machine learning model that uses For-Hire Vehicle data from [Kaggle](https://www.kaggle.com/) to create a tip predictor for rides. The For-Hire Vehicle industries includes all taxis that offer passenger pick ups and drop off services. It includes yellow cab, Uber, Lyft, Revel etc. A rider's fare includes the fare based on distance and time, taxes, tolls, fees, and other charges if applicable. The driver receives fares as payment and tip on top based on customer's choice. The goal of this project as mentioned before is to create a tip predictor based of the data like trip time, trip distance, fare, tolls, fees etc.
 
+## Project Report
+Project report can be found [here](https://github.com/Pupat3l/NYC-trips/blob/main/project_report.pdf)
+
 ## Data 
 The dataset that I have decided to utilize for the final project is called "NYC FHV(Uber/Lyft) Trip Data Expanded (2019-2022)" and can be found [here](https://www.kaggle.com/datasets/jeffsinsel/nyc-fhvhv-data). The dataset provides detailed information about every For-Hire Vehicle (which includes Uber and Lyft) rides in the New York City. The dataset was originally found on the official nyc.gov website. Information regarding the trip included in the dataset is TLC license number, date and time of the pick-up and drop-off, taxi zone, passenger pick-up and drop-off time, and tip etc. The dataset also has information regarding the distance travelled, NYC taxes, tolls, and surcharges for the LGA and JFK airport. Overall, it includes all the data generated from a ride.
 
