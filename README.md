@@ -51,7 +51,7 @@ rm fhvhv_tripdata_2019-02.parquet
 - Cleaned data, from raw folder of the s3 bucket, was used followed by using relevant columns (trip duration, fare, tax, fee etc) only.
 - Used StringIndexer, OneHotEncodder, VectorAssembler to create features that includes vectors from all columns but tips.
 
-#### Modelimn:
+#### Modeling:
 - Created a LinearRegression on 'tips' which is the target feature, evaluator using RegressionEvaluator.
 - Then created a pipeline using indexer, encoder, assembler, and regression. 
 - Then the dataset was already splitted into two parts: training data(0.70), testing data(0.30) in the seed 45 earlier on. 
